@@ -112,6 +112,13 @@ let max_ism = document.querySelector('.forma');
 max_ism.onsubmit = function (e) {
       e.preventDefault();
 }
+let name_age = document.getElementById('name-age');
+let first_name = document.getElementById('first-name');
+let age_7 = document.getElementById('age-7');
+let btn_7 = document.getElementById('btn_7');
+btn_7.addEventListener('click', () => {
+      name_age.innerHTML = `Name: ${first_name.value} <br> Age: ${age_7.value}`
+})
 //////////////////////////////////////////////////////////////////// 8-boshlandi
 let array_dalete = [2, 7, 42, 23, 6, 53, 12, 4, 18];
 let array_ochirish = document.querySelector('.array_ochirish');
