@@ -106,16 +106,7 @@ for (let i = 0; i < array_2.length; i++) {
       natija_array.push(yigindi);
 }
 qiymat_array.innerHTML = `[${natija_array.join(', ')}]`;
-///////////////////////////////////////////////////////////////// 6-boshlandi
-//#6
-// let big_letters = document.getElementById('big-letters');
-// let text = big_letters.toUpperCase();
 
-// big_letters.addEventListener('input', (e) => {
-//      let harp =  e.target.value;
-// })
-
-// toUpperCase()
 /////////////////////////////////////////////////////////////////// 7-boshlandi
 let max_ism = document.querySelector('.forma');
 max_ism.onsubmit = function (e) {
