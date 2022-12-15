@@ -14,13 +14,14 @@ forma.onsubmit = function (event) {
 }
 
 btn_lavozim.addEventListener('click', () => {
-      if (lavozim.value === 'ishchi') {
+      let a = lavozim.value.toLowerCase()
+      if (a === 'ishchi') {
             lavozim_qaytaruvchi.innerHTML = 'Hello...';
       }
-      else if (lavozim.value === 'director') {
+      else if (a === 'director') {
             lavozim_qaytaruvchi.innerText = 'Greetings...';
       }
-      else if (lavozim.value === '') {
+      else if (a === '') {
             lavozim_qaytaruvchi.innerHTML = 'No login'
       }
       else {
@@ -133,7 +134,7 @@ btn_dalete.addEventListener('click', () => {
                   delete array_dalete[i]
             }
       }
-      console.log(array_dalete);
+      // console.log(array_dalete);
       p.innerHTML = `[${array_dalete.join(' ')}]`;
       och_array.appendChild(p);
 });
