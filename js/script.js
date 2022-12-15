@@ -94,7 +94,6 @@ for (let i = 0; i < array.length; i++) {
       sum += yigindi;
 }
 array_qiymati.innerHTML = sum;
-
 ////////////////////////////////////////////////////////////////// 5-boshlandi
 let array_2 = [3, 4, 12, 6, 9, 10];
 let array_3 = [2, 6, 12, 15, 4, 5];
@@ -106,7 +105,6 @@ for (let i = 0; i < array_2.length; i++) {
       natija_array.push(yigindi);
 }
 qiymat_array.innerHTML = `[${natija_array.join(', ')}]`;
-
 /////////////////////////////////////////////////////////////////// 7-boshlandi
 let max_ism = document.querySelector('.forma');
 max_ism.onsubmit = function (e) {
@@ -146,7 +144,6 @@ ism_list.onsubmit = function (event) {
 }
 
 ismlar.addEventListener('keyup', chiqarish)
-
 function chiqarish(e) {
       if (e.keyCode == 13) {
             let p = document.createElement('p');
