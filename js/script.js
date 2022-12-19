@@ -14,7 +14,7 @@ forma.onsubmit = function (event) {
 }
 
 btn_lavozim.addEventListener('click', () => {
-      let a = lavozim.value.toLowerCase()
+      let a = lavozim.value.toLowerCase();
       if (a === 'ishchi') {
             lavozim_qaytaruvchi.innerHTML = 'Hello...';
       }
@@ -33,12 +33,12 @@ let btn_farq = document.getElementById('btn-farq');
 btn_farq.addEventListener('click', () => {
       let sana_1 = document.getElementById('sana-1');
       let sana_2 = document.getElementById('sana-2');
-      let sana_farqi = document.getElementById('sana_farqi')
-      let date_1 = new Date(sana_1.value)
-      let date_2 = new Date(sana_2.value)
-      let result = date_2 - date_1;
+      let sana_farqi = document.getElementById('sana_farqi');
+      let date_1 = new Date(sana_1.value);
+      let date_2 = new Date(sana_2.value);
+      let result = Math.abs(date_2 - date_1);
       let farq_sana = result / (1000 * 60 * 60 * 24);
-      sana_farqi.innerHTML = farq_sana;
+      sana_farqi.innerHTML =`${farq_sana} kun`;
 });
 /////////////////////////////////////////////////////////////// 3 - boshlandi
 let son_kiritish = document.getElementById('son-kiritish');
@@ -77,6 +77,9 @@ son_kiritish.addEventListener('input', (event) => {
       }
       else if (a == 1) {
             kir_son.innerHTML = n_value;
+      }
+      else if (son_kiritish.value === ''){
+            kir_son.innerHTML = ''
       }
       else if (n == 0) {
             kir_son.innerHTML = m_value;
@@ -130,7 +133,6 @@ btn_dalete.addEventListener('click', () => {
                   delete array_dalete[i]
             }
       }
-      // console.log(array_dalete);
       p.innerHTML = `[${array_dalete.join(' ')}]`;
       och_array.appendChild(p);
 });
@@ -149,6 +151,7 @@ function chiqarish(e) {
             let p = document.createElement('p');
             p.innerHTML = ismlar.value;
             ism_chiqarish.appendChild(p);
+            ismlar.value = ''
       }
 }
 

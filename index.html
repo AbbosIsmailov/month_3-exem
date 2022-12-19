@@ -6,7 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>3-month Examination</title>
-      <link rel="stylesheet" href="./css/bootstrap.css">
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
       <style>
             #sana-1 {
                   margin-left: 100px;
@@ -16,7 +16,6 @@
                   margin-left: 100px;
                   margin-top: 20px;
             }
-
             .right {
                   float: right;
             }
@@ -24,15 +23,14 @@
                   background: rgba(0, 0, 0, 0.8);
                   color: #fff;
             }
-
       </style>
 </head>
 
 <body>
       <section class="container mt-5">
             <header>
-                  <h3>NT-79 3-oy imtihoni.</h3>
-                  <button id="mavzu" class="btn bg-info text-white fw-semibold mb-1 right">Mavzuni o'zgartirish</button>
+                  <h1 class="mb-4">NT-79 3-oy imtihoni.</h1>
+                  <button id="mavzu" class="btn btn-primary fw-semibold mb-2 right">Mavzuni o'zgartirish</button>
             </header>
             <div class="accordion mb-5" id="accordionExample">
                   <div class="accordion-item">
@@ -79,7 +77,7 @@
                                           <label for="sana-2">1-sanani tanlang</label>
                                           <input id="sana-2" type="date">
                                     </form>
-                                    <button class="mt-2 btn bg-info fw-semibold text-white" id="btn-farq">Farq topish</button>
+                                    <button class="mt-2 btn btn-info fw-semibold" id="btn-farq">Farq topish</button>
                                     <h4 class="mt-2">
                                           <code class="mt-2" id="sana_farqi"></code>
                                     </h4>
@@ -179,7 +177,7 @@
                                                 <input id="age-7" required max="150" min="0" type="number">
                                           </label>
                                           <br>
-                                          <button id="btn_7" class="bg-info mt-3 px-3 py-1 rounded border fw-semibold"
+                                          <button id="btn_7" class="btn btn-info mt-3 px-3 py-1 fw-semibold"
                                                 type="submit">Tasdiqlash</button>
                                     </form>
                                     <h5><code class="mt-2" id="name-age"></code></h5>
@@ -201,7 +199,7 @@
                                     <form action="">
                                           <input type="number" class="array_ochirish">
                                     </form>
-                                    <button id="btn_dalete" class="btn mt-3 border bg-info px-4 fw-bold">O'chirish</button>
+                                    <button id="btn_dalete" class="btn mt-3 btn-info px-4 fw-semibold">O'chirish</button>
                                     <p>
                                           <code id="och-array"></code>
                                     </p>
