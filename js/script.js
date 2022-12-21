@@ -126,11 +126,10 @@ let array_ochirish = document.querySelector('.array_ochirish');
 let btn_dalete = document.getElementById('btn_dalete');
 let och_array = document.getElementById('och-array');
 btn_dalete.addEventListener('click', () => {
-      array_ochirish.value
       let p = document.createElement('p')
       for (let i = 0; i < array_dalete.length; i++) {
             if (array_ochirish.value == array_dalete[i]) {
-                  delete array_dalete[i]
+                  delete array_dalete[i];
             }
       }
       p.innerHTML = `[${array_dalete.join(' ')}]`;
